@@ -50,7 +50,7 @@ public class HelloController {
 		try {
 			RequestMap map = new RequestMap();
 			map.set("partner-id", "ptnr_BEeCrYJHh2BXTXPy_PEtp-8DBOo");
-			map.set("quoterequest.transaction_reference", "0700000699");
+			map.set("quoterequest.transaction_reference", "0700000799");
 			map.set("quoterequest.sender_account_uri", "tel:+2130000");
 			map.set("quoterequest.recipient_account_uri", "tel:+254070005");
 			map.set("quoterequest.payment_amount.amount", "100.00");
