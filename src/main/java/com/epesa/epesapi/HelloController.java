@@ -42,7 +42,7 @@ public class HelloController {
        String keyPassword = "Kinyusy";     
        JSONObject json=new JSONObject();
         JSONArray results=new  JSONArray();
-       InputStream is = new FileInputStream("/epesaKeyAlias-sandbox.p12"); 
+       InputStream is = new FileInputStream("epesaKeyAlias-sandbox.p12"); 
        ApiConfig.setAuthentication(new OAuthAuthentication(consumerKey, is, keyAlias, keyPassword));  
         ApiConfig.setDebug(true);   
 	ApiConfig.setSandbox(true);    
