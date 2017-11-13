@@ -35,7 +35,7 @@ public class CustomerController {
      return cust;
 	}
     
-@GetMapping(value="/index")
+@GetMapping(value="index")
 public String profile(){
   return "Welcome to e-Pesa: The electronics Money System!!";
 }
