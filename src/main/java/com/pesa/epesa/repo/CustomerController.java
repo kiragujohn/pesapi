@@ -37,7 +37,7 @@ public class CustomerController {
     
 @GetMapping(value="/index")
 public String profile(){
-  return "Welcome to e-Pesa System!!";
+  return "Welcome to e-Pesa: The electronics Money System!!";
 }
     
     
