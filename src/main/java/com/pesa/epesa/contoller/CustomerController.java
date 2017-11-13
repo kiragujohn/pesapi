@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.pesa.epesa.repo;
+package com.pesa.epesa.contoller;
 
+import com.pesa.epesa.repo.CustomerRepository;
 import come.epesa.model.Customer;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -20,6 +21,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
  
@@ -35,8 +37,8 @@ public class CustomerController {
      return cust;
 	}
     
-@GetMapping(value="index")
-public String profile(){
+@RequestMapping("/")
+public String welcome(){
   return "Welcome to e-Pesa: The electronics Money System!!";
 }
     
