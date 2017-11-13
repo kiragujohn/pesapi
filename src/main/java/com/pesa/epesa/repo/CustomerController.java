@@ -35,11 +35,9 @@ public class CustomerController {
      return cust;
 	}
     
-@GetMapping(value="/variables")
+@GetMapping(value="/index")
 public String profile(){
-
-  AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-  return context.getApplicationName();
+  return "Welcome to e-Pesa System!!";
 }
     
     
