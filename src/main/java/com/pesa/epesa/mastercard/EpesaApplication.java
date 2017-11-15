@@ -13,7 +13,7 @@ public class EpesaApplication {
 	SpringApplication.run(EpesaApplication.class, args);
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
 	  //Enable a "live" profile
-	  context.getEnvironment().setActiveProfiles("dev");
+	  context.getEnvironment().setActiveProfiles("live");
 	 // context.register(AppConfig.class);
 	  context.refresh();
 

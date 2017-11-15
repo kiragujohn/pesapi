@@ -17,7 +17,6 @@ public class Request_quote_helper {
     public RequestMap getmap(String refId){
     RequestMap map = new RequestMap();
 map.set("partner-id", "ptnr_BEeCrYJHh2BXTXPy_PEtp-8DBOo");
-//map.set("quoterequest.transaction_reference", "0762768");
 map.set("quoterequest.transaction_reference",refId);
 map.set("quoterequest.sender_account_uri", "tel:+2130000");
 map.set("quoterequest.recipient_account_uri", "tel:+254070005");
