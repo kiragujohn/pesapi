@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.pesa.epesa.repo;
+package com.pesa.epesa.mastercard.repo;
 
-import come.epesa.model.Customer;
+import come.epesa.mastercard.model.Customer;
 import java.util.List;
  
 import org.springframework.data.repository.CrudRepository;

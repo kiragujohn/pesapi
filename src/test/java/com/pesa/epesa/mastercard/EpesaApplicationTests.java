@@ -1,4 +1,4 @@
-package com.pesa.epesa;
+package com.pesa.epesa.mastercard;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
