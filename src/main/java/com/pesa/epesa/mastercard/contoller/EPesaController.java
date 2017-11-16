@@ -38,7 +38,7 @@ CustomerRepository repository;
 
     @RequestMapping("/")
     public String welcome(){
-      return "To test the system call method quote/0762768";
+      return "Welcome to e-Pesa money transfer system <p><h1>End Points:<p/><p><h1>/quote</h1><p/>";
     }
  
     @GetMapping(value="/customers",  produces=MediaType.APPLICATION_JSON_VALUE)
