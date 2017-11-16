@@ -22,6 +22,7 @@ public class Mastercard_Basic_Authenticator {
       String consumerKey = Mastercard_Properties.getProperty(Property.CONSUMERKEY);
       String keyAlias =  Mastercard_Properties.getProperty(Property.KEYALIAS);            
       String keyPassword = Mastercard_Properties.getProperty(Property.KEYPASSWORD);
+      //InputStream is = new FileInputStream(Mastercard_Properties.getProperty(Property.KEYSTOREPATH));  
       InputStream is = new FileInputStream(Mastercard_Properties.getProperty(Property.KEYSTOREPATH));  
       ApiConfig.setAuthentication(new OAuthAuthentication(consumerKey, is, keyAlias, keyPassword)); 
       ApiConfig.setDebug(true);   
