@@ -5,6 +5,7 @@
  */
 package com.pesa.epesa.mastercard.contoller;
 
+import com.mastercard.api.crossborder.Quotes;
 import com.pesa.epesa.contoller.helpers.Ref_generator;
 import com.pesa.epesa.mastercard.moneySend.Mastercard_quote_request;
 import com.pesa.epesa.mastercard.repo.CustomerRepository;
@@ -48,7 +49,7 @@ CustomerRepository repository;
             }
 
    @RequestMapping(value="/quote", method=RequestMethod.GET,produces=MediaType.APPLICATION_JSON_VALUE)  
-     public String quote(@RequestParam(value = "userTokenID", required=false) Integer userTokenID,@RequestParam(value = "hashCode", required=false) String hashCode,@RequestParam(value = "object", required=false) Object object) {
+     public Quotes quote(@RequestParam(value = "userTokenID", required=false) Integer userTokenID,@RequestParam(value = "hashCode", required=false) String hashCode,@RequestParam(value = "object", required=false) Object object) {
         Ref_generator refgen=new Ref_generator();
           Mastercard_quote_request quote=new Mastercard_quote_request();
             return quote.send_request(refgen.generate());

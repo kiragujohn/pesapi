@@ -18,22 +18,23 @@ import com.pesa.epesa.mastercard.resources.Mastercard_Properties;
 import com.pesa.epesa.mastercard.resources.Property;
 
 public class Mastercard_quote_request {
-   public String send_request(String refId){        
+    Quotes response=new Quotes();
+   public Quotes send_request(String refId){        
 		try {
                     Mastercard_Basic_Authenticator.basic_Authenticate();
                     Request_quote_helper helper=new Request_quote_helper();
-                    Quotes response = Quotes.create(helper.getmap(refId));  
-                    return response.get("quote.proposals.proposal[0]").toString();                    
-			
+                    response = Quotes.create(helper.getmap(refId)); 
+                    
 		} catch (ApiException e) {
 			System.err.println("HttpStatus: "+e.getHttpStatus());
 			System.err.println("Message: "+e.getMessage());
 			System.err.println("ReasonCode: "+e.getReasonCode());
 			System.err.println("Source: "+e.getSource());
+                
 		}
                 catch(FileNotFoundException ef){
                 
                 }
-                return null;
+               return response;
    }
 }
